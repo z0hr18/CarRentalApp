@@ -11,6 +11,13 @@
 		8C8152022AE3D725006F4EC1 /* HorizontalVehiclesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8152002AE3D725006F4EC1 /* HorizontalVehiclesCell.xib */; };
 		8C8152052AE3D744006F4EC1 /* VerticalVehiclesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8152032AE3D744006F4EC1 /* VerticalVehiclesCell.swift */; };
 		8C8152062AE3D744006F4EC1 /* VerticalVehiclesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8152042AE3D744006F4EC1 /* VerticalVehiclesCell.xib */; };
+		8C8152092AE96FB9006F4EC1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8152072AE96FB9006F4EC1 /* TableViewCell.swift */; };
+		8C81520A2AE96FB9006F4EC1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8152082AE96FB9006F4EC1 /* TableViewCell.xib */; };
+		8C81520D2AE9707B006F4EC1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81520B2AE9707B006F4EC1 /* CollectionViewCell.swift */; };
+		8C81520E2AE9707B006F4EC1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C81520C2AE9707B006F4EC1 /* CollectionViewCell.xib */; };
+		8C8152102AE972C9006F4EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81520F2AE972C9006F4EC1 /* ViewController.swift */; };
+		8CD2454A2AE9828F00AE4712 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD245492AE9828F00AE4712 /* LoginController.swift */; };
+		8CD2454D2AE9B8BC00AE4712 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2454C2AE9B8BC00AE4712 /* SearchController.swift */; };
 		FE9D309C2AE3A6040004F029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9D309B2AE3A6040004F029 /* AppDelegate.swift */; };
 		FE9D309E2AE3A6040004F029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9D309D2AE3A6040004F029 /* SceneDelegate.swift */; };
 		FE9D30A32AE3A6040004F029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9D30A12AE3A6040004F029 /* Main.storyboard */; };
@@ -24,6 +31,13 @@
 		8C8152002AE3D725006F4EC1 /* HorizontalVehiclesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalVehiclesCell.xib; sourceTree = "<group>"; };
 		8C8152032AE3D744006F4EC1 /* VerticalVehiclesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalVehiclesCell.swift; sourceTree = "<group>"; };
 		8C8152042AE3D744006F4EC1 /* VerticalVehiclesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalVehiclesCell.xib; sourceTree = "<group>"; };
+		8C8152072AE96FB9006F4EC1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8C8152082AE96FB9006F4EC1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		8C81520B2AE9707B006F4EC1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8C81520C2AE9707B006F4EC1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		8C81520F2AE972C9006F4EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		8CD245492AE9828F00AE4712 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8CD2454C2AE9B8BC00AE4712 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		FE9D30982AE3A6040004F029 /* CarRentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9D309B2AE3A6040004F029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE9D309D2AE3A6040004F029 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,11 +92,18 @@
 				8C8151FE2AE3D165006F4EC1 /* Cell */,
 				FE9D309B2AE3A6040004F029 /* AppDelegate.swift */,
 				FE9D309D2AE3A6040004F029 /* SceneDelegate.swift */,
+				8C81520F2AE972C9006F4EC1 /* ViewController.swift */,
+				8CD2454C2AE9B8BC00AE4712 /* SearchController.swift */,
+				8CD245492AE9828F00AE4712 /* LoginController.swift */,
 				FE9D30A12AE3A6040004F029 /* Main.storyboard */,
 				FE9D30A72AE3A6060004F029 /* Assets.xcassets */,
 				FE9D30A92AE3A6060004F029 /* LaunchScreen.storyboard */,
 				FE9D30AC2AE3A6060004F029 /* Info.plist */,
 				FE9D30A42AE3A6040004F029 /* CarRentalApp.xcdatamodeld */,
+				8C8152072AE96FB9006F4EC1 /* TableViewCell.swift */,
+				8C8152082AE96FB9006F4EC1 /* TableViewCell.xib */,
+				8C81520B2AE9707B006F4EC1 /* CollectionViewCell.swift */,
+				8C81520C2AE9707B006F4EC1 /* CollectionViewCell.xib */,
 			);
 			path = CarRentalApp;
 			sourceTree = "<group>";
@@ -146,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8152022AE3D725006F4EC1 /* HorizontalVehiclesCell.xib in Resources */,
+				8C81520E2AE9707B006F4EC1 /* CollectionViewCell.xib in Resources */,
+				8C81520A2AE96FB9006F4EC1 /* TableViewCell.xib in Resources */,
 				FE9D30AB2AE3A6060004F029 /* LaunchScreen.storyboard in Resources */,
 				FE9D30A82AE3A6060004F029 /* Assets.xcassets in Resources */,
 				8C8152062AE3D744006F4EC1 /* VerticalVehiclesCell.xib in Resources */,
@@ -161,9 +184,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8152012AE3D725006F4EC1 /* HorizontalVehiclesCell.swift in Sources */,
+				8CD2454D2AE9B8BC00AE4712 /* SearchController.swift in Sources */,
 				FE9D309C2AE3A6040004F029 /* AppDelegate.swift in Sources */,
 				FE9D30A62AE3A6040004F029 /* CarRentalApp.xcdatamodeld in Sources */,
+				8C81520D2AE9707B006F4EC1 /* CollectionViewCell.swift in Sources */,
+				8CD2454A2AE9828F00AE4712 /* LoginController.swift in Sources */,
+				8C8152092AE96FB9006F4EC1 /* TableViewCell.swift in Sources */,
 				8C8152052AE3D744006F4EC1 /* VerticalVehiclesCell.swift in Sources */,
+				8C8152102AE972C9006F4EC1 /* ViewController.swift in Sources */,
 				FE9D309E2AE3A6040004F029 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

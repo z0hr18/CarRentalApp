@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="CarRentalApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="428"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="428"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cij-cb-a1x">
+                        <rect key="frame" x="100" y="0.0" width="364" height="428"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_2" translatesAutoresizingMaskIntoConstraints="NO" id="2a8-xT-9Re">
+                                <rect key="frame" x="-70" y="12" width="384" height="216"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmQ-DK-zcL">
+                                <rect key="frame" x="132" y="279" width="80" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnp-b3-RFL">
+                                <rect key="frame" x="132" y="328" width="80" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066723746522803939" green="0.22778392872277889" blue="0.54052241161616155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2a8-xT-9Re" firstAttribute="leading" secondItem="Cij-cb-a1x" secondAttribute="leading" constant="-70" id="7sg-Jt-w9q"/>
+                            <constraint firstItem="2a8-xT-9Re" firstAttribute="top" secondItem="Cij-cb-a1x" secondAttribute="top" constant="12" id="TXY-d0-wRa"/>
+                            <constraint firstAttribute="trailing" secondItem="2a8-xT-9Re" secondAttribute="trailing" constant="50" id="glE-AH-Hd2"/>
+                            <constraint firstAttribute="bottom" secondItem="2a8-xT-9Re" secondAttribute="bottom" constant="200" id="hL8-UE-B1d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cij-cb-a1x" secondAttribute="bottom" id="08N-Ez-Wdf"/>
+                <constraint firstItem="Cij-cb-a1x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="100" id="WRy-6p-eJp"/>
+                <constraint firstItem="Cij-cb-a1x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y73-NC-T1Q"/>
+                <constraint firstAttribute="trailing" secondItem="Cij-cb-a1x" secondAttribute="trailing" id="mfB-xd-jJs"/>
+            </constraints>
+            <size key="customSize" width="464" height="428"/>
+            <connections>
+                <outlet property="image" destination="2a8-xT-9Re" id="dXx-gb-COG"/>
+                <outlet property="label" destination="bmQ-DK-zcL" id="FLT-jy-cuG"/>
+                <outlet property="labelNumber" destination="dnp-b3-RFL" id="H4K-N0-nPX"/>
+                <outlet property="view" destination="Cij-cb-a1x" id="93e-fU-QOU"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="83.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="car_2" width="151" height="87"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
