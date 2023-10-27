@@ -8,7 +8,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -20,11 +20,11 @@ class TableViewCell: UITableViewCell {
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "collectionCell")
         
     }
-
-   
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         
     }
     
@@ -36,15 +36,16 @@ extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionViewCell
-        cell.image.backgroundColor = .cyan
+        //        cell.image.backgroundColor = .cyan
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let with = UIScreen.main.bounds.width/3 - 10
-        return CGSize(width: with, height: 120)
+        return CGSize(width: 120, height: 150)
         
     }
-   
-    }
+    
+}
 
 

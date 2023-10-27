@@ -147,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="518.32061068702285" y="-736.61971830985919"/>
         </scene>
-        <!--View Controller-->
+        <!--Car Rental-->
         <scene sceneID="XtJ-cx-a5a">
             <objects>
                 <viewController id="woJ-ke-EOC" customClass="ViewController" customModule="CarRentalApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="418-Wf-EgN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="418-Wf-EgN">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -169,7 +169,7 @@
                             <constraint firstItem="8io-5e-qjo" firstAttribute="trailing" secondItem="418-Wf-EgN" secondAttribute="trailing" id="tYx-CY-jSK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lT0-8P-KKw"/>
+                    <navigationItem key="navigationItem" title="Car Rental" id="lT0-8P-KKw"/>
                     <connections>
                         <outlet property="tableView" destination="418-Wf-EgN" id="1fF-Gu-rel"/>
                     </connections>

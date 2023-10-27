@@ -43,7 +43,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! TableViewCell
-            cell.collectionView.backgroundColor = .red
+//            cell.collectionView.backgroundColor = .red
             return cell
         } else {
             return UITableViewCell()
@@ -52,9 +52,9 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 40
+            return 12
         } else if indexPath.section == 1 {
-            return  130
+            return  150
         } else {
             return 40
         }
