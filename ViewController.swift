@@ -6,58 +6,72 @@
 //
 
 import UIKit
+import RealmSwift
+
+class VehiclesDatas: Object {
+    @Persisted var name: String = ""
+    @Persisted var model: String = ""
+    @Persisted var price: String = ""
+    @Persisted var engine: String = ""
+    @Persisted var category: String = CarCategory.standard.rawValue
+}
+
+enum CarCategory: String {
+    case standard = "Standard"
+    case prestige = "Prestige"
+    case suv = "SUV"
+}
 
 class ViewController: UIViewController {
-
-   
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var collection: UICollectionView!
+    @IBOutlet weak var carImage: UIImageView!
+    
+    @IBOutlet weak var carCategory: UILabel!
+    
+    @IBOutlet weak var categoryCount: UILabel!
+    
+    @IBOutlet weak var changedColor: UIView!
+    
+    @IBOutlet weak var headerCell: UICollectionViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(UINib(nibName: "TableViewCell", bundle: .main), forCellReuseIdentifier: "tableCell")
-    }
-  
-}
+        collection.delegate = self
+        collection.dataSource = self
+        collection.register(UINib(nibName: "HorizontalViewCell", bundle: .main), forCellWithReuseIdentifier: "HorizontalViewCell")
+        }
 
-extension ViewController : UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+    @IBAction func searchBar(_ sender: UITextField) {
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        } else if section == 1 {
-            return  1
-        } else {
-            return 5
-        }
-                    
+//    var items = [1, 2,3, 4, 5]
+    
+    func configureUI() {
+        collection.register(UINib(nibName: "\(CarHeaderView.self)", bundle: nil),
+                            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                            withReuseIdentifier: "\(CarHeaderView.self)")
+    }
+}
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        10
     }
     
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            return UITableViewCell()
-        } else if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! TableViewCell
-//            cell.collectionView.backgroundColor = .red
-            return cell
-        } else {
-            return UITableViewCell()
-        }
+    //cell configuration
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorizontalViewCell", for: indexPath) as! HorizontalViewCell
+        cell.layer.cornerRadius = 35
+        return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return 12
-        } else if indexPath.section == 1 {
-            return  150
-        } else {
-            return 40
-        }
-                    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        .init(width: collectionView.frame.width * 0.855, height: 355)
+    }
+    
+    //header or footer configuration
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "\(CarHeaderView.self)", for: indexPath) as! CarHeaderView
+        return header
     }
 }
